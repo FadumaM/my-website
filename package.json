@@ -1,0 +1,29 @@
+{
+  "name": "my-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "start": "react-scripts start & npm run postcss",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postcss": "postcss ./src/styles/index.css -c postcss.config.js -o ./src/styles/bundle.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "postcss": "^6.0.13",
+    "postcss-cli": "^4.1.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^11.0.0",
+    "postcss-mixins": "^6.1.1",
+    "postcss-nested": "^2.1.2",
+    "postcss-plugin": "^1.0.0",
+    "postcss-simple-vars": "^4.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+nav{
+    width: 100%;
+}
+
+nav .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger span {
+    width: 20px;
+    height: 4px;
+    display: block;
+    background: $fontColor;
+}
+
+.hamburger span:first-child{
+    margin-bottom: 7px;
+}

@@ -1,36 +1,3 @@
-body {
-    background: #000000;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Slab', serif;
-}
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-li{
-    list-style: none;
-}
-nav{
-    width: 100%;
-}
-nav .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.hamburger span {
-    width: 20px;
-    height: 4px;
-    display: block;
-    background: #ffffff;
-}
-.hamburger span:first-child{
-    margin-bottom: 7px;
-}
 .Hero {
     background-image: url('/assets/homepage_hero.png');
     background-size: cover;
@@ -42,25 +9,29 @@ nav .container {
     flex-direction: column;
     align-items: center;
 }
+
 .Hero h1{
     font-size: 6vw;
-    color: #D5DBDE;
+    color: $fontColorSecond;
 }
+
 .Hero h1 span{
-    border-bottom: 10px solid #8686FC;
+    border-bottom: 10px solid $primaryColor;
 }
+
 .Hero .headline {
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 @media (max-width: 720px) {
     .Hero h1 {
         font-size: 7vw;
     }
     .Hero h1 span {
-        border-bottom: 5px solid #8686FC;
+        border-bottom: 5px solid $primaryColor;
     }
 
 
